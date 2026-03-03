@@ -1,13 +1,17 @@
 import './App.css'
+import { Routes, Route } from "react-router-dom";
+import Login from "./pages/SignupPage";
+import Dashboard from "./pages/Dashboard";
+import ScanDetail from "./pages/ScanDetail";
 
 function App() {
-  
-
   return (
-    <>
-    <div className="flex justify-center items-center font-bold text-2xl"> Hello World </div>
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/scan/:id" element={<ScanDetail />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
