@@ -1,6 +1,6 @@
 import { FiSearch, FiGitBranch, FiTool, FiCheckSquare, FiFileText } from "react-icons/fi";
 
-export default function ScanProgressSection() {
+function ScanProgressSection() {
   return (
     <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
 
@@ -87,3 +87,5 @@ function Meta({ label, value }) {
     </div>
   );
 }
+
+export default ScanProgressSection;
